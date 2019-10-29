@@ -1,7 +1,10 @@
+
+
+
 const entryManager = {
 
   makeJournalEntryComponent(journalEntry) {
-    // Create your own HTML structure for a journal entry
+    
     return `
       <section>
         <h3>${journalEntry.concept}</h3>
@@ -12,3 +15,5 @@ const entryManager = {
     `
   }
 }
+
+export default entryManager

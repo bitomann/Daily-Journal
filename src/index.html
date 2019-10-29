@@ -29,22 +29,22 @@
         <fieldset>
             <label for="mood-input">Mood</label>
             <select class="mood" name="mood-input">
-                <option value="Amazing">Amazing</option>
-                <option value="Great">Great</option>
-                <option value="Ok">Ok</option>
+                <option value="frustrated">Frustrated</option>
+                <option value="brainDead">Brain Dead</option>
+                <option value="motivated">Motivated</option>
+                <option value="positive">Positive</option>
+                <option value="meh">Negative</option>
             </select>
         </fieldset>
-        <button>Record Journal Entry</button>
+        <button id="recordEntry">Record Journal Entry</button>
     </form>
 
     <article class="entryLog">
 
     </article>
 
-    <script src="./scripts/data.js"></script>
-    <script src="./scripts/entryComponent.js"></script>
-    <script src="./scripts/entriesDOM.js"></script>
-    <script src="./scripts/journal.js"></script>
+    <script type="module" src="./scripts/journal.js"></script>
+    <!-- <script src="./scripts/journal.js"></script> -->
 </body>
 
 </html>
