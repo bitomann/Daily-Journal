@@ -1,3 +1,6 @@
+import API from "./data.js"
+import renderDom from "./entriesDOM.js"
+
 /*
     Main application logic that uses the functions and objects
     defined in the other JavaScript files.
@@ -6,4 +9,20 @@
     to get the data and display it.
 */
 API.getJournalEntries()
-.then(response => renderDom.renderJournalEntries(response))
+.then(entries => renderDom.renderJournalEntries(entries))
+
+
+document.getElementById("recordEntry").addEventListener("click",() => {
+    event.preventDefault()
+console.log("something")
+} )
+
+function recordEntry() {
+    console.log("record entry")
+   
+  }
+
+
+  document.querySelectorAll("input");
+  
+  console.log()

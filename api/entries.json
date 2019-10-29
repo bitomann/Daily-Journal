@@ -1,25 +1,32 @@
+
+
+
 {
+    
     "entries": [
         {
             "id": 1,
-            "date": "07/24/2018",
-            "concept": "Array methods",
-            "entry": "We learned about 4 different array methods today. forEach made sense, but the others still confuse me.",
-            "mood": "Ok"
+            "date": "10/18/19",
+            "concepts": "lab",
+            "entry": "Feeling a little better today. Look forward to stepping away from code for the weekend and beginning groupProjects2 on Monday",
+            "mood":"meh"
         },
         {
             "id": 2,
-            "date": "08/02/2018",
-            "concept": "Fetch calls",
-            "entry": "How to get data from an API",
-            "mood": "Ok"
+            "date": "10/25/19",
+            "concepts": "Group Project",
+            "entry": "Felt pretty crappy after group 2, but learned a lot of what not to do.",
+            "mood":"shit"
         },
         {
             "id": 3,
-            "date": "07/07/2018",
-            "concept": "CSS Selectors",
-            "entry": "How to use classes and ids to apply CSS to elements on the DOM",
-            "mood": "Ok"
+            "date": "10/28/19",
+            "concepts": "Array-Methods",
+            "entry": "Feeling better today. I think I am beginning to understand a bit more and I'm hoping that book 3 will be a bit less stressful. 'When you get tired learn to rest. Don't Quit...'",
+            "mood":"positive"
         }
     ]
 }
+
+
+
