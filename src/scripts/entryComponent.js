@@ -16,4 +16,4 @@ const entryManager = {
   }
 }
 
-export default entryManager
+export default entryManager;
