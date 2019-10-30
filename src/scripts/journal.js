@@ -1,5 +1,5 @@
-import API from "./data.js"
-import renderDom from "./entriesDOM.js"
+import API from "./data.js";
+import renderDom from "./DOMRenderer.js";
 
 /*
     Main application logic that uses the functions and objects
@@ -9,20 +9,38 @@ import renderDom from "./entriesDOM.js"
     to get the data and display it.
 */
 API.getJournalEntries()
-.then(entries => renderDom.renderJournalEntries(entries))
+    .then(entries => renderDom.renderJournalEntries(entries));
 
 
-document.getElementById("recordEntry").addEventListener("click",() => {
-    event.preventDefault()
-console.log("something")
-} )
+document.getElementById("recordEntry").addEventListener("click", () => {
+    event.preventDefault();
 
-function recordEntry() {
-    console.log("record entry")
-   
-  }
+    const dateCont = document.querySelector("#dateCont").value;
+    const conceptCont = document.querySelector("#conceptCont").value;
+    const JournalEntryCont = document.querySelector("#JournalEntryCont").value;
+    const moodSelectCont = document.querySelector("#moodSelectCont").value;
+    const journalHolder = createJouralEntry(dateCont, conceptCont, JournalEntryCont, moodSelectCont)
+
+    console.log(journalHolder);
 
 
-  document.querySelectorAll("input");
-  
-  console.log()
+    
+});
+
+const createJouralEntry = (dateEntry, conceptEntry, entryEntry, moodEntry) => {
+    return {
+        date: dateEntry,
+        concept: conceptEntry,
+        entry: entryEntry,
+        mood: moodEntry
+    }
+}
+let newJournalEntry = createJouralEntry(dateEntry, conceptEntry, entryEntry, moodEntry)
+
+// console.log()
+// const newJournalEntry = createJouralEntry(date[1], date[2], date[2])
+
+// function recordEntry() {
+//     console.log("record entry");
+
+//   }
