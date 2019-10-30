@@ -1,4 +1,4 @@
-import entryManager from "./entryComponent.js"
+import entryManager from "./entryComponent.js";
 
 /*
     Purpose: To render all journal entries to the DOM
@@ -9,12 +9,13 @@ const renderDom = {
   renderJournalEntries(entries) {
     let HtmlForAllEntries = ""
     entries.forEach(entry => {
-      const entryHtml = entryManager.makeJournalEntryComponent(entry)
+      const entryHtml = entryManager.makeJournalEntryComponent(entry);
       HtmlForAllEntries += entryHtml
-    })
-    const logArticle = document.querySelector(".entryLog")
-    logArticle.innerHTML = HtmlForAllEntries
+    });
+    const logArticle = document.querySelector(".entryLog");
+    logArticle.innerHTML = HtmlForAllEntries;
   }
 }
 
-export default renderDom
+
+export default renderDom;

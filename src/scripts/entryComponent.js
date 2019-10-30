@@ -14,6 +14,6 @@ const entryManager = {
       </section>
     `
   }
-}
+};
 
 export default entryManager;
