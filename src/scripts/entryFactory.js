@@ -1,7 +1,7 @@
 
 
 
-const entryManager = {
+const entryFactory = {
 
   makeJournalEntryComponent(journalEntry) {
     
@@ -16,4 +16,4 @@ const entryManager = {
   }
 };
 
-export default entryManager;
+export default entryFactory;
