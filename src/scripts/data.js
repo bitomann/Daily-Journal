@@ -4,7 +4,7 @@ const API = {
           .then(response => response.json());
   },
 
-  saveJournalEntries() {
+  saveJournalEntries: (newJournalEntry) => {
 
     fetch("http://localhost:3000/entries", { 
     method: "POST",
@@ -13,9 +13,7 @@ const API = {
     },
     body: JSON.stringify(newJournalEntry)
 
-  });
+  })
+}};
 
-
-
-  
 export default API;
