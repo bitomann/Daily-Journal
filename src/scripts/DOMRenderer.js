@@ -1,4 +1,4 @@
-import entryManager from "./entryComponent.js";
+import entryFactory from "./entryFactory";
 
 /*
     Purpose: To render all journal entries to the DOM
