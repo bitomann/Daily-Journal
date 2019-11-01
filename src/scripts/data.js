@@ -1,3 +1,5 @@
+// fetches data from API server and 
+
 const API = {
   getJournalEntries () {
       return fetch("http://localhost:3000/entries")

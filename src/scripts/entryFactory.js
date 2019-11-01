@@ -8,6 +8,8 @@ const entryManager = {
         <p>${journalEntry.entry}</p>
         <p>${journalEntry.mood}</p>
         <p>${journalEntry.date}</p>
+        <p>${journalEntry.filter}</p>
+
       </section>
     `
   }
