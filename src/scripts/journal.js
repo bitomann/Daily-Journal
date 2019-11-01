@@ -1,5 +1,5 @@
 import API from "./data.js";
-import render from "./DOMRenderer.js";
+import renderDom from "./DOMRenderer.js";
 
 /*
     Main application logic that uses the functions and objects
@@ -21,33 +21,17 @@ API.getJournalEntries()
     }
 
 document.getElementById("recordEntry").addEventListener("click", () => {
-    // event.preventDefault();
 
     const dateCont = document.querySelector("#dateCont").value;
     const conceptCont = document.querySelector("#conceptCont").value;
     const JournalEntryCont = document.querySelector("#JournalEntryCont").value;
     const moodSelectCont = document.querySelector("#moodSelectCont").value;
+    
     let newJournalEntry = createJouralEntry(dateCont, conceptCont, JournalEntryCont, moodSelectCont)
 
     API.saveJournalEntries(newJournalEntry)
         .then(API.getJournalEntries)
-        .then(render.renderDom)(entryManager);
-    // const journalHolder = createJournalEntry(dateCont, conceptCont, JournalEntryCont, moodSelectCont)
+        .then(response => renderDom.renderJournalEntries(response))
 
-    // console.log(journalHolder);
-
-        // .then(response => response.json());
-
-    console.log(newJournalEntry)
-    
 });
 
-
-
-// console.log()
-// const newJournalEntry = createJouralEntry(date[1], date[2], date[2])
-
-// function recordEntry() {
-//     console.log("record entry");
-
-//   }
